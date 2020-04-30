@@ -1,0 +1,27 @@
+{
+  "name": "fatec-site-api",
+  "description": "API utilizada pelo Website da Fatec Taquaritinga construída com Node.js",
+  "version": "1.0.0",
+  "author": "Erick Eduardo Petrucelli <erick.petrucelli@fatectq.edu.br>",
+  "contributors": [
+    "Eder Carlos Salazar Sotto <eder.sotto@fatectq.edu.br>",
+    "Felipe do Espírito Santo <felipe.santo@fatectq.edu.br>",
+    "Gustavo Henrique Del Vechio <gustavo.vechio@fatectq.edu.br>"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fatec-taquaritinga/fatec-site-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fatec-taquaritinga/fatec-site-api/issues"
+  },
+  "homepage": "https://github.com/fatec-taquaritinga/fatec-site-api#readme",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
