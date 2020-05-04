@@ -108,3 +108,6 @@ dist
 
 # .ENV
 .env
+
+# SCRIPT PM2
+restart.sh
