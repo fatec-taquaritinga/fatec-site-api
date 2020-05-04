@@ -1,12 +1,15 @@
 const load = require('express-load');
 const bodyParser = require('body-parser');
-
 const cors = require('cors');
 const express = require('express');
-
+const Sequelize = require('sequelize');
 
 module.exports = function(db) {
     const app = express();
+
+    app.set('port', 3000);
+
+    app.set('db', db);
 
     app.use(express.json({
         extended: true
@@ -30,8 +33,5 @@ module.exports = function(db) {
         cwd: 'app'
     }).then('controllers').then('routes').into(app);
 
-
-	app.set('port', 3000);
-	
     return app;
 };

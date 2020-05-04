@@ -1,14 +1,16 @@
-var mysql = require('mysql');
 
-var connection = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'site_fatec',
-    password : 'VtieH7Vd6tRuuYJ9',
-    database : 'site_fatec'
-});
+module.exports = {
+    HOST: process.env.HOST,
+    USER: process.env.USER,
+    PASSWORD: process.env.PASSWORD,
+    DB: process.env.DB,
+    dialect: "mysql",
+    pool: {
+        max: 5,
+        min: 0,
+        acquire: 30000,
+        idle: 10000
+    }
+};
 
-connection.connect(function(err) {
-    if (err) throw err;
-});
 
-module.exports = connection;

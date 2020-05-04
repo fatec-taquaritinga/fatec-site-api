@@ -1,11 +1,15 @@
-//require('dotenv').config()
+require('dotenv').config()
 
-var http = require('http');
-var sql = require('./config/database.js');
-var app = require('./config/express.js')(sql);
+const http = require('http');
+const db = require("./config/sequelize");
 
-http.createServer(app).listen(app.get('port'),
+db.sequelize.sync();
+
+let app = require('./config/express.js')(db);
+let port = process.env.PORT || app.get('port');
+
+http.createServer(app).listen(port ,
     function() {
-        console.log('Servidor em execução na porta ' + app.get('port'));
+        console.log('Servidor em execução na porta ' + port);
     }
 );

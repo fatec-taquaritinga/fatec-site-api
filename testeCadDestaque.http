@@ -1,0 +1,11 @@
+### Send POST request with json body
+POST http://127.0.0.1:3005/api/destaques
+Content-Type: application/json
+
+{
+  "titulo": "Novo Título 3",
+  "subtitulo": "content 23",
+  "urlImagem": "hdashdauihuis",
+  "corBotao": "#FF0000",
+  "dataExpiracao": "2020-05-25"
+}
