@@ -22,6 +22,9 @@ module.exports = function (app) {
 
         model.findAll({attributes: columns, where: condition})
             .then(data => {
+                for(var r in data) {
+                    data[r].urlImagem=process.env.BASEURL+data[r].urlImagem
+                }
                 res.status(200).json(data);
             })
             .catch(err => {

@@ -11,6 +11,8 @@ module.exports = function(db) {
 
     app.set('db', db);
 
+    app.use("/", express.static("./public"));
+
     app.use(express.json({
         extended: true
     }));

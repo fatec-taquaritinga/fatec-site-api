@@ -1,0 +1,48 @@
+### Send POST request with json body
+POST http://127.0.0.1:3005/api/destaques
+Content-Type: application/json
+
+{
+  "titulo": "Notícia 1",
+  "subtitulo": "Subtítulo da notícia...",
+  "corBotao": "#FF0000",
+  "urlImagem": "banner-si.jpg"
+}
+
+
+### Send POST request with json body
+POST http://127.0.0.1:3005/api/destaques
+Content-Type: application/json
+
+{
+  "titulo": "Notícia 2",
+  "subtitulo": "Subtítulo... notícia...",
+  "corBotao": "#000000",
+  "urlImagem": "banner-ads.jpg"
+}
+
+
+### Send POST request with json body
+POST http://127.0.0.1:3005/api/destaques
+Content-Type: application/json
+
+{
+  "titulo": "Notícia 3",
+  "subtitulo": "Sub....... notícia...",
+  "corBotao": "#cccccc",
+  "urlImagem": "banner-pi.jpg"
+}
+
+
+### Send POST request with json body
+POST http://127.0.0.1:3005/api/destaques
+Content-Type: application/json
+
+{
+  "titulo": "Notícia 4",
+  "subtitulo": null,
+  "corBotao": "#666666",
+  "urlImagem": "banner-agro.jpg"
+}
+
+###
